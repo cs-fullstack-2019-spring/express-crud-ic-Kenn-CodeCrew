@@ -2,8 +2,7 @@ var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
-
-var PokemonSchema = new Schema(
+var UserSchema = new Schema(
     {
         id: Number,
         name: String,
@@ -28,6 +27,5 @@ var PokemonSchema = new Schema(
         }],
     });
 
-
 //Export model
-module.exports = mongoose.model('Pokemon', PokemonSchema);
+module.exports = mongoose.model('UserData', UserSchema);
